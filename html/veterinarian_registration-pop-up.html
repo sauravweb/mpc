@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>MyPetCredentials</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="responsive.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" href="rmm-css/responsivemobilemenu.css" type="text/css"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="rmm-js/responsivemobilemenu.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<link rel="stylesheet" href="bjqs.css">
+
+    <!-- some pretty fonts for this demo page - not required for the slider -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
+
+    <!-- demo.css contains additional styles used to set up this demo page - not required for the slider --> 
+    <link rel="stylesheet" href="demo.css">
+
+    <!-- load jQuery and the plugin -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/bjqs-1.3.min.js"></script>
+    
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+      <link rel="stylesheet" href="css/style.css" />
+ 
+    <script src="js/login.js"></script>
+    
+    <link rel="stylesheet" href="examples/css/sample.css" />
+
+<link rel="stylesheet" type="text/css" href="css/msdropdown/dd.css" />
+<script src="js/msdropdown/jquery.dd.js"></script>
+<!-- </msdropdown> -->
+
+<link rel="stylesheet" type="text/css" href="css/msdropdown/skin2.css" />
+<link rel="stylesheet" type="text/css" href="css/msdropdown/flags.css" />
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="../style/gen_ie.css.php" media="screen, projection" />
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+.demo a, .demo {height:1%}
+</style>
+<script type="text/javascript">
+document.createElement('abbr'); //force IE lte 6 to recognize the abbreviations - http://www.domscripting.com/blog/display/113
+try { document.execCommand( "BackgroundImageCache", false, true); } catch(e) {};
+</script>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="Experiments%20_%20Multiple%20Expand%20All_Collapse%20All_files/print_exp.css" media="print">
+<script>
+function createByJson() {
+	var jsonData = [					
+					{description:'Choos your payment gateway', value:'', text:'Payment Gateway'},					
+					{image:'images/msdropdown/icons/Amex-56.png', description:'My life. My card...', value:'amex', text:'Amex'},
+					{image:'images/msdropdown/icons/Discover-56.png', description:'It pays to Discover...', value:'Discover', text:'Discover'},
+					{image:'images/msdropdown/icons/Mastercard-56.png', title:'For everything else...', description:'For everything else...', value:'Mastercard', text:'Mastercard'},
+					{image:'images/msdropdown/icons/Cash-56.png', description:'Sorry not available...', value:'cash', text:'Cash on devlivery', disabled:true},
+					{image:'images/msdropdown/icons/Visa-56.png', description:'All you need...', value:'Visa', text:'Visa'},
+					{image:'images/msdropdown/icons/Paypal-56.png', description:'Pay and get paid...', value:'Paypal', text:'Paypal'}
+					];
+	$("#byjson").msDropDown({byJson:{data:jsonData, name:'payments2'}}).data("dd");
+}
+$(document).ready(function(e) {		
+	//no use
+	try {
+		var pages = $("#pages").msDropdown({on:{change:function(data, ui) {
+												var val = data.value;
+												if(val!="")
+													window.location = val;
+											}}}).data("dd");
+
+		var pagename = document.location.pathname.toString();
+		pagename = pagename.split("/");
+		pages.setIndexByValue(pagename[pagename.length-1]);
+		$("#ver").html(msBeautify.version.msDropdown);
+	} catch(e) {
+		//console.log(e);	
+	}
+	
+	$("#ver").html(msBeautify.version.msDropdown);
+		
+	//convert
+	$("select").msDropdown({roundedBorder:false});
+	createByJson();
+	$("#tech").data("dd");
+});
+function showValue(h) {
+	console.log(h.name, h.value);
+}
+$("#tech").change(function() {
+	console.log("by jquery: ", this.value);
+})
+//
+</script>
+<!--[if !lt IE 6]><!-->
+<script src="js/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/expand.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+$("html").addClass("js");
+$.noConflict();
+jQuery(function($) {
+    jQuery("#outer div.cat h1.expand").toggler();
+    jQuery("#demo1").expandAll({trigger: "h1.expand", ref: "h1.expand"});
+    jQuery("#demo2").expandAll({trigger: "h1.expand", ref: "h1.expand", oneSwitch: false});
+    jQuery("#outer div.other").expandAll({
+      expTxt : "[Show]", 
+      cllpsTxt : "[Hide]",
+      ref : "ul.collapse",
+      showMethod : "show",
+      hideMethod : "hide"
+    });
+    jQuery("#outer div.post").expandAll({
+      expTxt : "[Read this entry]", 
+      cllpsTxt : "[Hide this entry]",
+      ref : "div.collapse", 
+      localLinks: "p.top a",
+      cllpsLength : 200    
+    });
+    jQuery("html").removeClass("js");
+});
+//--><!]]>
+</script>
+<!--<![endif]-->
+
+ <!-- jQuery Custombox CSS -->
+    <link rel="stylesheet" href="src/jquery.custombox.css">
+
+    <!-- Demo page CSS -->
+    <link rel="stylesheet" href="demo/css/demo.css">
+    
+    
+</head>
+
+<body   style="background:#7c7c7c !important; padding-top:100px;">
+
+<div class="popup">
+<h1>Registration</h1>
+<br/>
+<div class="thnakyou">
+Thank you for registering with Mypetcredentials.com.</br>
+Please check your email to confirm your registered email address.
+You must confirm your adminstrator email & your company email address
+in order to login to your account with each respective email address.<br/><br/>
+
+Pet owners will not be able to assign you as their primary veterinarian
+until we have verified your license credentials.Please ensure that your
+D.V.M license number and name apprears on your account as it appears
+on your D.V.M license,including your middle name or middle intial,as
+inaccurate information will cause your approval to be suspended.<br/><br/>
+
+<p class="note-red">Note:<br/>
+Please check your SPAM or Junk Mail Folder if you do not receive your 
+confirmation email from registration@mypetcredentials.com<br/></p>
+
+<a href="#" class="c-e">Close & Exit</a></div>
+</div><!-- center -->
+<div class="clear"></div>
+<div class="clear"></div>
+</div><!-- wrapper -->
+
+
+<script>
+function createByJson() {
+	var jsonData = [					
+					{description:'Choos your payment gateway', value:'', text:'Payment Gateway'},					
+					{image:'images/msdropdown/icons/Amex-56.png', description:'My life. My card...', value:'amex', text:'Amex'},
+					{image:'images/msdropdown/icons/Discover-56.png', description:'It pays to Discover...', value:'Discover', text:'Discover'},
+					{image:'images/msdropdown/icons/Mastercard-56.png', title:'For everything else...', description:'For everything else...', value:'Mastercard', text:'Mastercard'},
+					{image:'images/msdropdown/icons/Cash-56.png', description:'Sorry not available...', value:'cash', text:'Cash on devlivery', disabled:true},
+					{image:'images/msdropdown/icons/Visa-56.png', description:'All you need...', value:'Visa', text:'Visa'},
+					{image:'images/msdropdown/icons/Paypal-56.png', description:'Pay and get paid...', value:'Paypal', text:'Paypal'}
+					];
+	$("#byjson").msDropDown({byJson:{data:jsonData, name:'payments2'}}).data("dd");
+}
+
+$(document).ready(function(e) {		
+	//no use
+	try {
+		var pages = $("#pages").msDropdown({on:{change:function(data, ui) {
+												var val = data.value;
+												if(val!="")
+													window.location = val;
+											}}}).data("dd");
+
+		var pagename = document.location.pathname.toString();
+		pagename = pagename.split("/");
+		pages.setIndexByValue(pagename[pagename.length-1]);
+		$("#ver").html(msBeautify.version.msDropdown);
+	} catch(e) {
+		//console.log(e);	
+	}
+	
+	$("#ver").html(msBeautify.version.msDropdown);
+		
+	//convert
+	$("select").msDropdown({roundedBorder:false});
+	createByJson();
+	$("#tech").data("dd");
+});
+function showValue(h) {
+	console.log(h.name, h.value);
+}
+$("#tech").change(function() {
+	console.log("by jquery: ", this.value);
+})
+//
+</script>
+
+</body>
+</html>

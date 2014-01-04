@@ -1,0 +1,58 @@
+
+/*
+-----------------------------------------------
+Print styles - Adi Palaz
+Author:   Adriana Palazova
+Version:  02 December 2008
+----------------------------------------------- */
+html, body, h5, h6, #side, #side h3, #side h4, #side a {
+  border:0 none;
+  background: white;
+  color:#000;
+  font:11pt/16pt sans-serif;}
+  
+#wrapper, #container, #main, #side {position:static; width:100%} 
+ 
+.demo{float:none; min-height:0; height:auto; padding:0}
+
+* {float:none !important; position:static !important; overflow:visible !important; text-align:left !important; margin-left:0 !important;}
+
+#ddmenu, #container, #main, #side  {float:none !important; display:block !important;} 
+
+h1 a:link span, h1 a:visited span, address,
+#sidecol, #second, #lang, #searchbox, #icons, .nav, #menu, #sidecol ul, #main .small, #top, hr, .out,
+a.external span,
+#footer, .off, .scr, #tabs, #adhead, #adbottom, #demos {display:none !important;}
+
+h2{margin-bottom:1.5em}   
+
+ul li {margin-bottom:0.5em} 
+
+ul li ul li {margin-bottom:0.25em}   
+      
+ul.expandable li abbr {margin-left:0}
+
+#main a[href^="javascript:switchNode"]:after {content: "";}   
+
+.collapse, .collapsible, .accordion div.outer, .accordion ul, #demo div, #demo h3 {display:block !important; overflow:visible !important;}
+
+.open a {border:0 none !important;}
+
+#switch, .switch {text-align:left;}
+
+#ddmenu, #ddmenu li, .img {float:none !important; border:none !important;}
+
+#ddmenu ul {position:static}
+
+.img p {text-align:left}
+
+.mleft {margin:0 !important}
+
+.frame {margin-top:0; background-image:none;}
+
+.frame .title {display:block; margin:0 0 1em; padding:5px 0 0; border:0 none !important;}
+
+h1, h2, h3, h4, h5, h6 {page-break-after: avoid;}
+
+table tr, ul, ol, .frame {page-break-inside: avoid;}
+

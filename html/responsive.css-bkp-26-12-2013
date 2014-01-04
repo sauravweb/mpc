@@ -1,0 +1,594 @@
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+#wrapper { width:100% !important;}
+#header { background-size:100% 100% !important;
+height:auto !important;}
+.logo { width:100% !important;}	
+.option { width:100% !important;}	
+	.option { width:100% !important ; margin:0px !important;}	
+	.find-search { width:62% !important;}
+	
+	.find-select { width:36% !important; }
+	.find-box { width:100% !important; margin:5px 0px !important;}
+	.find-search input { width:65% !important;}
+	.find-search>.search-icon { width:53px !important;}
+	.login-box { width:100% !important;} 
+	.logo { margin-bottom:10px !important;}
+	.logo img { width:215px !important; height:auto !important;}
+	
+	.shadow2 { width:49% !important;}
+.center-left { width:100% !important; margin-left:0px !important;}
+.center-right { width:100% !important;}
+
+.app { width:315px !important; float:none !important;
+margin:0 auto !important; }
+.download  h1 { width:100% !important ; float:right;
+font-size:28px !important ; text-align:center !important; padding-bottom:10px !important;}	
+
+.pet-orange { width:100% !important;}
+.pet-green	 { width:100% !important;  margin:10px 0px !important;}
+.pet-red { width:100% !important;}
+
+.Adoption { width:92% !important;}
+.events  { width:92% !important;}
+
+.footer-find { border:none !important; background-position:36px center  !important; }
+	.footer-customer-care  {border:none !important; }
+	.footer-email { border:none !important; background-position:20px center  !important; } 
+	.footer-get-social { }	
+	
+	.swiper-container {
+  height: auto !important;
+  overflow: hidden;
+  width: 102% !important;
+}
+
+.swiper-slide {
+  float: left;
+  height: auto !important;
+}
+
+.swiper-wrapper { height:auto !important;}
+
+.device {
+  height: auto !important;
+  margin: 5px auto;
+  padding: 30px 0px;
+  position: relative;
+  width: 101% !important;
+}
+
+.popup { width:95% !important;  height:auto !important; margin-bottom:10px !important;  }
+	
+	.read-more-box { height:auto !important;}
+	
+.pet-center { width:95% !important;}	
+.Adoption-form select { padding:5px !important;}
+
+.Adoption-form input { width:98% !important; }
+
+.data { width:90% !important;}	
+
+ .pic-main  { width:100%;}
+
+.pic { width:92% !important;}
+
+.file-uploader  { width:100% !important;}
+
+.capcha { width:100% !important;} 
+
+.profile-pic-buttons { width:100% !important;}
+
+#footer .footer-find p { padding-left:90px !important;}
+
+.data .o-z-p { margin-top:0px !important;}
+
+.data .o-s-p  { margin-top:0px !important;}
+
+
+.notes h5 { margin-top:15px !important;}
+
+.data input { width:97% !important;}
+
+
+ #loginBox2 { right:-210px !important;}
+
+.borderRadius { width:100% !important;}
+
+	.service-offered-right { width:100% !important;}
+	.service-offered-l { width:100% !important;}
+	
+	.file-uploader .file_input_textbox { width:96% !important;}
+	
+	.iphone { margin-bottom:10px !important;}
+	
+	.pp-btn a { font-size:14px !important;}
+	
+	.information h1 a { font-size:14px !important;}
+	
+	.profile-pic-buttons  a { font-size:14px !important;}
+	
+	.b-abt-left { width:98%;}
+.b-abt-right { width:98%;}
+.b-a-center { margin:0px;}
+.b-a-center { width:100%;}
+.b-abt-center { width:98%;}
+.b-info > iframe { width:100%;}
+.b-video-box > iframe { width:100%;}
+.b-video-box {  height:auto;}
+	
+	
+/****** [ benefits page css] *********/
+.b-abt-left {}
+/******* [benefits page css] *********/
+
+	}	
+	
+
+	
+	
+	@media only screen and (min-width: 769px)  {
+		
+	.rmm-main-list { display:block !important;}
+	.rmm-toggled{ display:none !important;}	
+	
+	
+	
+		}
+		
+		@media only screen and (min-width: 320px) and (max-width: 480px) {
+			
+			#loginBox { right:-18px !important;}
+			
+			.pet a {  
+			height:58px !important; line-height:58px !important;}
+			
+				.shadow { width:100% !important;}
+	.footer-find { width:100% !important; border:none !important; background-position:36px center  !important; }
+	
+	.footer-customer-care  { width:48% !important;border:none !important; }
+	.footer-email { width:96% !important;border:none !important; background-position:20px center  !important; } 
+	#footer .footer-find p { padding-left:87px !important;}
+	.footer-get-social { width:75% !important;}			
+				
+		.Adoption-form input { width:97% !important; }
+		
+		.step1 { background:url(images/step1-iphone.png) no-repeat top center !important; height:67px; display:block; background-size:100% !important;}
+		
+		.v-step { background:url(images/veterinarian-registration-step-iphone.png) no-repeat top center !important; height:35px !important; display:block; background-size:100% !important;}
+		
+		.step2{ background:url(images/step2-iphone.png) no-repeat top center !important; height:67px; display:block; background-size:100% !important;}
+		
+		.step3{ background:url(images/step3-iphone.png) no-repeat top center !important; height:67px; display:block; background-size:100% !important;}
+		.hd-left { font-size:16px !important;}
+.hd-right { font-size:16px !important;}
+
+.orange-button { width:88px !important;}
+.green-button	 { width:88px !important;}	
+
+.profile-pic-buttons {
+ 
+  width: 312px !important;
+}
+
+.yesno p { font-size:15px !important;}
+
+
+	#footer >.footer-find { width:100% !important;}
+		#footer > .footer-customer-care {width:100% !important;}
+		
+		#footer >.footer-email {width:100% !important;}
+		#footer > .footer-get-social {width:100% !important;}
+		
+		.information h1 { font-size:16px !important;
+		width:95% !important;}
+		
+		
+		.pp-btn  a { margin-bottom:10px !important;}
+		.pp-btn {
+  margin: 0 auto !important;
+  width: 213px !important;
+  float:none !important;
+  margin-top:10px !important;
+}
+
+.uc-btn a { margin-bottom:10px !important;} 
+
+.uc-btn .large { width:170px !important; }	 
+
+.uc-btn { width:100% !important;}
+
+.shadow2 span { font-size:11px !important;}
+
+
+.find-box #msdrpdd20_msdd { width:190px !important;}
+
+.option .find-search input { width:35% !important;}
+
+.option .find-search { width:36% !important;}
+
+.borderRadius { width:100% !important;}
+
+.page-tw { margin-left:0px !important;}
+
+.service-offered { width:98% !important; }
+
+.service-offered-left { width:100% !important; padding-left:0px !important;}
+
+textarea { width:97% !important;}
+.date-row .oprations .ddcommon { width:98% !important;}
+
+.date-row { padding-left:0px !important;}
+
+.oprations h1 { height:75px !important; line-height:25px !important; padding-top:10px !important;} 
+
+.date-row input[type="text"] { margin-right:-30px !important;}
+.oprations  .ddcommon { width:100% !important;}
+
+
+.day-info { font-weight:bold !important; width:20px !important; }
+
+.iphone { margin-bottom:10px !important;}
+
+.Adoption-events { margin:18px 25px 10px 10px !important;}
+
+.read-more-box { width:96% !important; margin:8px !important;}
+
+.find-search { margin-top:2px !important;}
+
+.read-more-box { width:95% !important;}
+
+.find-select { margin-left:5px !important;}
+
+.find-search { margin-right:5px !important;}
+
+.pet-center { width:90% !important;}
+
+
+.weight	input { width:30% !important;} 
+
+
+
+.dob  .d-o-b { margin-top:25px !important;}
+
+.mid-select select { width:75px !important;}
+
+.dob .mid-select p { margin-top:0px !important;}
+
+.clndr { margin-left:20px !important;}
+
+.food input[type="checkbox"] { width:25px !important; height:10px !important;}
+
+#center .d-add { width:92% !important;}
+
+.d-add select { width:75% !important;}
+
+.mid-select .ddcommon {
+  margin-right: 20px !important;
+  width: 38% !important;
+}
+
+.image-view { margin-bottom:33px;}
+
+.or {
+  display: block;
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.clndr {
+  background: url("images/clndr.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  float: right;
+  height: 43px;
+  margin: -44px 15px 0 -17px;
+  width: 43px;
+}
+.dob input { width:77% !important;}
+
+/****** [ benefits page css] *********/
+.b-abt-left { width:98%;}
+.b-abt-right { width:98%;}
+.b-a-center { margin:0px;}
+.b-a-center { width:100%;}
+.b-abt-center { width:98%;}
+.b-info > iframe { width:100%;}
+.b-video-box > iframe { width:100%;}
+.b-video-box { width:100%; height:auto;}
+.b-hd { width:75%;}
+/******* [benefits page css] *********/
+
+
+
+			}
+		
+		/*** ipad  css ***/
+		
+		@media only screen and (min-width: 768px) and (max-width: 768px) and (max-height: 1024px )   {
+		
+		* { font-family:Arial, Helvetica, sans-serif !important;}
+		
+		.read-more-box { width:97% !important; }	
+		.download { width:97% !important;}	
+		
+		.footer-find { width:48% !important;}
+		
+		#footer .footer-find p { padding-left:90px !important;}
+		
+		.footer-email  { width:48% !important;}
+	
+		.footer-customer-care { width:48% !important;
+		border:none !important;}
+		
+		.footer-get-social { width:46% !important;}
+		
+		.device .arrow-right { right:-36px !important;
+		top:70% !important;}
+		
+		.device .arrow-left { left:-36px !important;top:70% !important;}
+		
+		.center-left { margin-left:10px !important;}
+		
+		.pic { width:97% !important;}
+		
+		.data { width:28% !important;}
+		
+		.profile-pic-buttons { width:55% !important;}
+		
+	.pp-btn { width:74% !important;}
+	
+	.uc-btn { width:80% !important;}
+	
+	.service-offered-right { width:55% !important;}
+	
+ .oprations .ddcommon { width:20% !important;}
+	
+	.your-page { width:200px !important;}
+	
+.file-uploader { width:74% !important;}
+
+.file-uploader .file_input_textbox { width:75% !important;}
+
+.pic { margin-bottom:20px !important;}
+
+.date-row input[type="text"] { margin-right:160px !important; width:200px !important;}
+
+.data-row .data { padding:0px 14px !important;}
+.data .o-s-p { margin-top:85px !important;}
+.data .o-z-p { margin-top:168px !important;} 
+		
+.dob .data input { width:85% !important;}	
+
+ .dob  .mid-select	 { width:50% !important;}	
+ 
+ .d-add select { width:72% !important;}
+ 
+ .food .data input { width:8% !important;}
+ 
+ .weight input { width:25% !important;}
+ 
+ .capcha textarea { width:97% !important;}
+ 
+ .weight { width:240px !important;}
+  .weight input { width:25% !important;}
+  
+  .mid-select .ddcommon {
+  margin-right: 20px !important;
+  width: 38% !important;
+}
+
+.device.device .arrow-right { top:75% !important;}
+.device.device .arrow-left { top:75% !important;}
+
+.dob input { width:77% !important;}
+
+.pet-orange {
+  background: none repeat scroll 0 0 #FEDA7C;
+  border: 1px solid #D5D2D2;
+  display: block;
+  float: left;
+  min-height: 182px;
+  width: 32% !important;  margin-right:10px !important;
+}
+
+.pet-orange-top {
+  background-size:43px;
+  display: block;
+  height: 61px;
+  width: 101%;
+}
+
+.pet-green {
+  margin: 0 !important;
+  width: 27% !important;
+}
+
+.pet-green {
+  background: none repeat scroll 0 0 #BADC85;
+  border: 1px solid #D5D2D2;
+  display: block;
+  float: left;
+  margin: 0 16px;
+  min-height: 182px;
+  width: 32% !important;
+  margin-right:10px !important;
+}
+
+.pet-green-top {
+  background-size:43px ;
+  display: block;
+  height: 60px;
+  width: 100%;
+}
+
+.pet-green-top img {
+  float: right;
+  height: auto;
+  width: 112px;
+}
+.pet-orange-top img {
+  float: right;
+  height: auto;
+  width: 112px;
+}
+
+.pet-red {
+  width: 32% !important;
+}
+
+.pet-center { min-height:180px; }
+
+.pet-red {
+  background: none repeat scroll 0 0 #F79D63;
+  border: 1px solid #D5D2D2;
+  display: block;
+  float: left;
+  min-height: 183px;
+  width: 32%;
+}
+
+.pet-red-top {
+ 
+  display: block;
+  height: 60px;
+  width: 100%;
+}
+
+.pet-red-top img {
+  float: right;
+  height: auto;
+  width: 112px;
+}
+
+.image-view { margin-bottom:33px;}
+
+.tpp { margin-top:34px !important;}
+
+.borderRadius { width:100% !important;}
+
+.b-abt-left { width:98%;}
+.b-abt-right { width:98%;}
+.b-a-center { margin:0px;}
+.b-a-center { width:100%;}
+.b-abt-center { width:98%;}
+.b-info > iframe { width:100%;}
+.b-video-box > iframe { width:100%;}
+.b-video-box {  height:auto;}
+
+.b-info > iframe {
+  height: 400px;
+  width: 100%;
+}
+.b-video-box { width:none !important;}
+
+.all-videos {
+  background: none repeat scroll 0 0 #FCD9A0;
+  border: 1px solid #D2D2D2;
+  border-radius: 5px;
+  padding: 20px 0;
+}
+
+.bvd {
+  display: block;
+  float: left;
+  height: 454px;
+  margin: 0 26px;
+  width: 100%;
+}
+
+.bvd > iframe {
+  height: 400px;
+  width: 93%;
+}
+.b-hd { width:87%;}
+		
+		}
+		
+
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (max-height: 768px )   {
+	
+	* { font-family:Arial, Helvetica, sans-serif !important;}
+	
+}
+
+
+		
+		@media only screen and (min-width: 481px) and (max-width: 767px) {
+			
+		#footer >.footer-find { width:50% !important;}
+		#footer > .footer-customer-care {width:48% !important;}
+		
+		#footer >.footer-email {width:48% !important;}
+		#footer > .footer-get-social {width:45% !important;}	
+		
+		.profile-pic-buttons { width:410px !important;}
+		
+	.pp-btn  a { width:88px !important;}	
+	.oprations .borderRadius{ width:19% !important;}
+	
+.uc-btn a { margin-bottom:10px !important;} 
+
+.uc-btn .large { width:178px !important; }	 
+
+.uc-btn { width:100% !important;}
+
+.date-row input[type="text"] { width:100px;}
+
+.bvd > iframe {
+  height: 400px;
+  width: 93%;
+}
+
+.all-videos {
+  background: none repeat scroll 0 0 #FCD9A0;
+  border: 1px solid #D2D2D2;
+  border-radius: 5px;
+  padding: 20px 0;
+}
+
+.bvd {
+  display: block;
+  float: left;
+  height: 454px;
+  margin: 0 26px;
+  width: 100%;
+}
+
+.b-hd { width:88%;}
+			
+		}
+		
+		@media only screen and (min-width: 320px) and (max-width: 360px) {
+			
+			.b-video { background:none;}
+			
+			}
+		
+		@media only screen and (min-width: 480px) and (max-width: 480px) {
+			.option .find-search { width:58% !important;}
+			
+			.find-box .find-search > .search-icon { width:17% !important;}
+			
+			.option .find-search input { width:77% !important;}
+		.dob input { width:88% !important;}	
+		.pp-btn {
+  float: none !important;
+  margin: 10px auto 0 !important;
+  width: 405px !important;
+}	
+	
+	.b-video-box {
+  height: auto !important;
+  width: 70%;
+}
+			
+			}
+			
+				@media only screen and (min-width: 800px)  {.oprations .ddcommon { width:280px !important; }
+			
+		.date-row input[type="text"] { width:280px !important;}	
+		
+		.find-select #msdrpdd20_msdd { width:128px !important;}	
+				
+				 }

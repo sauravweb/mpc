@@ -1,0 +1,848 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>MyPetCredentials</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="responsive.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" href="rmm-css/responsivemobilemenu.css" type="text/css"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="rmm-js/responsivemobilemenu.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<link rel="stylesheet" href="bjqs.css">
+
+    <!-- some pretty fonts for this demo page - not required for the slider -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
+
+    <!-- demo.css contains additional styles used to set up this demo page - not required for the slider --> 
+    <link rel="stylesheet" href="demo.css">
+
+    <!-- load jQuery and the plugin -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/bjqs-1.3.min.js"></script>
+    
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+      <link rel="stylesheet" href="css/style.css" />
+ 
+    <script src="js/login.js"></script>
+    
+    <link rel="stylesheet" href="examples/css/sample.css" />
+
+<link rel="stylesheet" type="text/css" href="css/msdropdown/dd.css" />
+<script src="js/msdropdown/jquery.dd.js"></script>
+<!-- </msdropdown> -->
+
+<link rel="stylesheet" type="text/css" href="css/msdropdown/skin2.css" />
+<link rel="stylesheet" type="text/css" href="css/msdropdown/flags.css" />
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="../style/gen_ie.css.php" media="screen, projection" />
+<![endif]-->
+<!--[if lte IE 6]>
+<style type="text/css">
+.demo a, .demo {height:1%}
+</style>
+<script type="text/javascript">
+document.createElement('abbr'); //force IE lte 6 to recognize the abbreviations - http://www.domscripting.com/blog/display/113
+try { document.execCommand( "BackgroundImageCache", false, true); } catch(e) {};
+</script>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="Experiments%20_%20Multiple%20Expand%20All_Collapse%20All_files/print_exp.css" media="print">
+<script>
+function createByJson() {
+	var jsonData = [					
+					{description:'Choos your payment gateway', value:'', text:'Payment Gateway'},					
+					{image:'images/msdropdown/icons/Amex-56.png', description:'My life. My card...', value:'amex', text:'Amex'},
+					{image:'images/msdropdown/icons/Discover-56.png', description:'It pays to Discover...', value:'Discover', text:'Discover'},
+					{image:'images/msdropdown/icons/Mastercard-56.png', title:'For everything else...', description:'For everything else...', value:'Mastercard', text:'Mastercard'},
+					{image:'images/msdropdown/icons/Cash-56.png', description:'Sorry not available...', value:'cash', text:'Cash on devlivery', disabled:true},
+					{image:'images/msdropdown/icons/Visa-56.png', description:'All you need...', value:'Visa', text:'Visa'},
+					{image:'images/msdropdown/icons/Paypal-56.png', description:'Pay and get paid...', value:'Paypal', text:'Paypal'}
+					];
+	$("#byjson").msDropDown({byJson:{data:jsonData, name:'payments2'}}).data("dd");
+}
+$(document).ready(function(e) {		
+	//no use
+	try {
+		var pages = $("#pages").msDropdown({on:{change:function(data, ui) {
+												var val = data.value;
+												if(val!="")
+													window.location = val;
+											}}}).data("dd");
+
+		var pagename = document.location.pathname.toString();
+		pagename = pagename.split("/");
+		pages.setIndexByValue(pagename[pagename.length-1]);
+		$("#ver").html(msBeautify.version.msDropdown);
+	} catch(e) {
+		//console.log(e);	
+	}
+	
+	$("#ver").html(msBeautify.version.msDropdown);
+		
+	//convert
+	$("select").msDropdown({roundedBorder:false});
+	createByJson();
+	$("#tech").data("dd");
+});
+function showValue(h) {
+	console.log(h.name, h.value);
+}
+$("#tech").change(function() {
+	console.log("by jquery: ", this.value);
+})
+//
+</script>
+<!--[if !lt IE 6]><!-->
+<script src="js/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/expand.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+$("html").addClass("js");
+$.noConflict();
+jQuery(function($) {
+    jQuery("#outer div.cat h1.expand").toggler();
+    jQuery("#demo1").expandAll({trigger: "h1.expand", ref: "h1.expand"});
+    jQuery("#demo2").expandAll({trigger: "h1.expand", ref: "h1.expand", oneSwitch: false});
+    jQuery("#outer div.other").expandAll({
+      expTxt : "[Show]", 
+      cllpsTxt : "[Hide]",
+      ref : "ul.collapse",
+      showMethod : "show",
+      hideMethod : "hide"
+    });
+    jQuery("#outer div.post").expandAll({
+      expTxt : "[Read this entry]", 
+      cllpsTxt : "[Hide this entry]",
+      ref : "div.collapse", 
+      localLinks: "p.top a",
+      cllpsLength : 200    
+    });
+    jQuery("html").removeClass("js");
+});
+//--><!]]>
+</script>
+<!--<![endif]-->
+
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+
+  $('.file_input_button').mouseover(function(){
+          $(this).addClass('file_input_button_hover');
+    });
+
+  $('.file_input_button').mouseout(function(){
+        $(this).removeClass('file_input_button_hover');
+    });
+
+  $('.file_input_hidden').change(function(){
+
+        var fileInputVal = $(this).val();
+
+        fileInputVal = fileInputVal.replace("C:\\fakepath\\", "");
+
+        $(this).parent().prev().val(fileInputVal);
+
+    });
+});
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+
+<div class="logo">
+ <a href="#"><img src="images/logo.png" width="304" height="130" alt="" /></a></div><!-- logo -->
+ 
+<div class="option">
+<div class="login-box">
+<div class="login">
+<div id="loginContainer2">
+                <a href="#" id="loginButton2"><span>Language </span><em></em></a>
+                <div style="clear:both"></div>
+                <div id="loginBox2">                
+                    <form id="loginForm2">
+                        <h1> Select Language </h1>
+                    </form>
+                </div>
+            </div>
+<div class="login3"><span><a href="#">Register Now</a></span></div>
+            <!-- Login Starts Here -->
+            <div id="loginContainer">
+                <a href="#" id="loginButton"><span>Login</span><em></em></a>
+                <div style="clear:both"></div>
+                <div id="loginBox">                
+                    <form id="loginForm">
+                    <h1>Login</h1>
+                        <fieldset id="body">
+                            <fieldset>
+                                <label for="email">Email Address</label>
+                                <input type="text" name="email" id="email" />
+                            </fieldset>
+                            <fieldset>
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" />
+                            </fieldset>
+                            
+                            
+                             <span>
+                        
+                        
+                        <a href="#" class="fp">Forgot your password?</a></span>
+                            <input type="submit" id="login" value="Go" />
+                            <label for="checkbox"><input type="checkbox" id="checkbox" />Remember me</label>
+                        </fieldset>
+                        
+                        <img src="images/facebook-connect.png" width="263" height="50" alt="" /> <span class="nu">
+                        
+                        
+                        <a href="#">New User?<p> Register Now </p></a></span>
+                    </form>
+                </div>
+            </div>
+            <!-- Login Ends Here -->
+</div>
+</div><!-- login-box -->
+  <div class="clear"></div>
+ 
+
+<div class="clear"></div>
+</div><!-- option -->
+
+  <div class="clear"></div>
+  </div><!-- header --><!-- slider --><!-- pet -->
+  <div id="center stp2">
+  <div id="pet-owner-registration">
+  <div class="pet-owner-registration-hd">
+  <h1 class="hd-left">Add a Pet - #1</h1> <h1 class="hd-right">Mandatory<span>*</span></h1>
+  <div class="clear"></div></div><!-- pet-owner-registration-hd -->
+  <div class="step2"></div>
+  
+  <div class="information">
+  <div id="outer">
+<div id="demo2" class="demo cat information">
+<h1 class="expand"><a class="open" style="display:block" href="#" title="Expand/Collapse">Pet Information *</a></h1>      
+<div style="display: block;" class="collapse shown">
+  <div class="information-data stp2">
+  <div class="data-row">
+  <div class="data">  <p class="spc">Species <span>*</span></p>
+  <select>
+  <option value="sl">Choices for Species</option>
+  <option value="dog">Canine (Dog)
+</option>  <option value="horse">Equine (Horse)</option>  <option value="cat">Feline (Cat)</option>
+</select></div>
+  
+   <div class="data"> <p>Name <span>*</span></p>     
+  	<input name="" type="text" class="nmin" />		
+  </div>
+   
+    <div class="data">   <p>Weight<span>*</span></p>
+ <div class="weight">
+ <div class="weight-left">Pounds<input name="" type="text" /></div><span>Or</span>
+ <div class="weight-right">Kilograms<input name="" type="text" /></div>
+   <div class="clear"></div>
+ </div></div>
+    
+  <div class="clear"></div>
+  </div>
+  
+  <div class="data-row">
+  <div class="data"><p>Gender <span>*</span></p>
+  <select>
+  <option value="">Choices for Gender</option>
+  <option >Female (F)</option> 
+  <option value="">Spayed Female (SF)</option>  <option value="">Male (M)</option>
+   <option value="">Neutered Male (NM)</option>
+</select></div>
+  
+  <div class="data"><p class="brd"> Breed <span>*</span></p>
+  <select name="" id="select_Breed_by_Name">
+								<option value=""> Select Breeds </option>
+								<option value="">Affenpinscher</option>
+				<option value="">Afghan Hound</option>
+				<option value="">Airedale Terrier</option>
+				<option value="">Akita</option>
+				<option value="">Alaskan Malamute</option>
+				<option value="">All American Dog</option>
+				<option value="">American English Coonhound</option>
+				<option value="">American Eskimo Dog</option>
+				<option value="">American Foxhound</option>
+				<option value="">American Hairless Terrier</option>
+				<option value="">American Leopard Hound</option>
+				<option value="">American Staffordshire Terrier</option>
+				<option value="">American Water Spaniel</option>
+				<option value="">Anatolian Shepherd Dog</option>
+				<option value="">Appenzeller Sennenhunde</option>
+				<option value="">Australian Cattle Dog</option>
+				<option value="">Australian Shepherd</option>
+				<option value="">Australian Terrier</option>
+				<option value="">Azawakh</option>
+				<option value="">Barbet</option>
+				<option value="">Basenji</option>
+				<option value="">Basset Hound</option>
+				<option value="">Beagle</option>
+				<option value="">Bearded Collie</option>
+				<option value="">Beauceron</option>
+				<option value="">Bedlington Terrier</option>
+				<option value="">Belgian Laekenois</option>
+				<option value="">Belgian Malinois</option>
+				<option value="">Belgian Sheepdog</option>
+				<option value="">Belgian Tervuren</option>
+				<option value="">Bergamasco</option>
+				<option value="">Berger Picard</option>
+				<option value="">Bernese Mountain Dog</option>
+				<option value="">Bichon Frise</option>
+				<option value="">Black Russian Terrier</option>
+				<option value="">Black and Tan Coonhound</option>
+				<option value="">Bloodhound</option>
+				<option value="">Bluetick Coonhound</option>
+				<option value="">Boerboel</option>
+				<option value="">Bolognese</option>
+				<option value="">Border Collie</option>
+				<option value="">Border Terrier</option>
+				<option value="">Borzoi</option>
+				<option value="">Boston Terrier</option>
+				<option value="">Bouvier des Flandres</option>
+				<option value="">Boxer</option>
+				<option value="">Boykin Spaniel</option>
+				<option value="">Bracco Italiano</option>
+				<option value="">Braque du Bourbonnais</option>
+				<option value="/">Briard</option>
+				<option value="">Brittany</option>
+				<option value="">Broholmer</option>
+				<option value="">Brussels Griffon</option>
+				<option value="">Bull Terrier</option>
+				<option value="">Bulldog</option>
+				<option value="">Bullmastiff</option>
+				<option value="">Cairn Terrier</option>
+				<option value="">Canaan Dog</option>
+				<option value="">Cane Corso</option>
+				<option value="">Cardigan Welsh Corgi</option>
+				<option value="">Catahoula Leopard Dog</option>
+				<option value="">Caucasian Ovcharka</option>
+				<option value="">Cavalier King Charles Spaniel</option>
+				<option value="">Central Asian Shepherd Dog</option>
+				<option value="">Cesky Terrier</option>
+				<option value="">Chesapeake Bay Retriever</option>
+				<option value="">Chihuahua</option>
+				<option value="">Chinese Crested</option>
+				<option value="">Chinese Shar-Pei</option>
+				<option value="">Chinook</option>
+				<option value="">Chow Chow</option>
+				<option value="">Cirneco dell'Etna</option>
+				<option value="">Clumber Spaniel</option>
+				<option value="">Cocker Spaniel</option>
+				<option value="">Collie</option>
+				<option value="">Coton de Tulear</option>
+				<option value="">Curly-Coated Retriever</option>
+				<option value="">Czechoslovakian Vlcak</option>
+				<option value="">Dachshund</option>
+				<option value="">Dalmatian</option>
+				<option value="">Dandie Dinmont Terrier</option>
+				<option value="">Danish-Swedish Farmdog</option>
+				<option value="">Deutscher Wachtelhund</option>
+				<option value="">Doberman Pinscher</option>
+				<option value="">Dogo Argentino</option>
+				<option value="">Dogue de Bordeaux</option>
+				<option value="">Drentsche Patrijshond</option>
+				<option value="">Dutch Shepherd</option>
+				<option value="">English Cocker Spaniel</option>
+				<option value="">English Foxhound</option>
+				<option value="">English Setter</option>
+				<option value="">English Springer Spaniel</option>
+				<option value="">English Toy Spaniel</option>
+				<option value="">Entlebucher Mountain Dog</option>
+				<option value="">Estrela Mountain Dog</option>
+				<option value="">Eurasier</option>
+				<option value="">Field Spaniel</option>
+				<option value="">Finnish Lapphund</option>
+				<option value="">Finnish Spitz</option>
+				<option value="">Flat-Coated Retriever</option>
+				<option value="">French Bulldog</option>
+				<option value="">French Spaniel</option>
+				<option value="">German Longhaired Pointer</option>
+				<option value="">German Pinscher</option>
+				<option value="">German Shepherd Dog</option>
+				<option value="">German Shorthaired Pointer</option>
+				<option value="">German Spitz</option>
+				<option value="">German Wirehaired Pointer</option>
+				<option value="">Giant Schnauzer</option>
+				<option value="">Glen of Imaal Terrier</option>
+				<option value="">Golden Retriever</option>
+				<option value="">Gordon Setter</option>
+				<option value="">Grand Basset Griffon Vendeen</option>
+				<option value="">Great Dane</option>
+				<option value="">Great Pyrenees</option>
+				<option value="">Greater Swiss Mountain Dog</option>
+				<option value="">Greyhound</option>
+				<option value="">Hamiltonstovare</option>
+				<option value="">Harrier</option>
+				<option value="">Havanese</option>
+				<option value="">Hovawart</option>
+				<option value="">Ibizan Hound</option>
+				<option value="">Icelandic Sheepdog</option>
+				<option value="">Irish Red and White Setter</option>
+				<option value="">Irish Setter</option>
+				<option value="">Irish Terrier</option>
+				<option value="">Irish Water Spaniel</option>
+				<option value="">Irish Wolfhound</option>
+				<option value="">Italian Greyhound</option>
+				<option value="">Japanese Chin</option>
+  <option value="">Jindo</option>
+				<option value="">Kai Ken</option>
+				<option value="">Karelian Bear Dog</option>
+				<option value="">Keeshond</option>
+				<option value="">Kerry Blue Terrier</option>
+				<option value="">Kishu Ken</option>
+				<option value="">Komondor</option>
+				<option value="">Kooikerhondje</option>
+				<option value="">Kromfohrlander</option>
+				<option value="">Kuvasz</option>
+				<option value="">Labrador Retriever</option>
+				<option value="">Lagotto Romagnolo</option>
+				<option value="">Lakeland Terrier</option>
+				<option value="">Lancashire Heeler</option>
+				<option value="">Leonberger</option>
+				<option value="">Lhasa Apso</option>
+				<option value="">Lowchen</option>
+				<option value="">Maltese</option>
+				<option value="">Manchester Terrier</option>
+				<option value="">Mastiff</option>
+				<option value="">Miniature American Shepherd</option>
+				<option value="">Miniature Bull Terrier</option>
+				<option value="">Miniature Pinscher</option>
+				<option value="">Miniature Schnauzer</option>
+				<option value="">Mudi</option>
+				<option value="">Neapolitan Mastiff</option>
+				<option value="">Newfoundland</option>
+				<option value="">Norfolk Terrier</option>
+				<option value="">Norrbottenspets</option>
+  <option value="">Norwegian Buhund</option>
+				<option value="">Norwegian Elkhound</option>
+				<option value="">Norwegian Lundehund</option>
+				<option value="">Norwich Terrier</option>
+				<option value="">Nova Scotia Duck Tolling Retriever</option>
+				<option value="">Old English Sheepdog</option>
+				<option value="">Otterhound</option>
+				<option value="">Papillon</option>
+				<option value="">Parson Russell Terrier</option>
+				<option value="">Pekingese</option>
+				<option value="">Pembroke Welsh Corgi</option>
+				<option value="">Perro de Presa Canario</option>
+				<option value="">Peruvian Inca Orchid</option>
+				<option value="">Petit Basset Griffon Vendeen</option>
+				<option value="">Pharaoh Hound</option>
+				<option value="">Plott</option>
+				<option value="">Pointer</option>
+				<option value="">Polish Lowland Sheepdog</option>
+				<option value="">Pomeranian</option>
+  <option value="">Poodle</option>
+  <option value="">Portuguese Podengo</option>
+  <option value="">Portuguese Podengo Pequeno</option>
+  <option value="">Portuguese Pointer</option>
+  <option value="">Portuguese Sheepdog</option>
+  <option value="">Portuguese Water Dog</option>
+  <option value="">Pug</option>
+  <option value="">Puli</option>
+  <option value="">Pumi</option>
+  <option value="">Pyrenean Shepherd</option>
+  <option value="">Rafeiro do Alentejo</option>
+  <option value="">Rat Terrier</option>
+  <option value="">Redbone Coonhound</option>
+  <option value="">Rhodesian Ridgeback</option>
+  <option value="">Rottweiler</option>
+  <option value="">Russell Terrier</option>
+  <option value="">Russian Toy</option>
+  <option value="">Saluki</option>
+  <option value="">Samoyed</option>
+  <option value="">Schapendoes</option>
+  <option value="">Schipperke</option>
+  <option value="">Scottish Deerhound</option>
+  <option value="">Scottish Terrier</option>
+  <option value="">Sealyham Terrier</option>
+  <option value="">Shetland Sheepdog</option>
+  <option value="">Shiba Inu</option>
+  <option value="">Shih Tzu</option>
+  <option value="">Siberian Husky</option>
+  <option value="">Silky Terrier</option>
+  <option value="">Skye Terrier</option>
+  <option value="">Sloughi</option>
+  <option value="">Slovensky Cuvac</option>
+  <option value="">Small Munsterlander Pointer</option>
+  <option value="">Smooth Fox Terrier</option>
+  <option value="">Soft Coated Wheaten Terrier</option>
+  <option value="">Spanish Mastiff</option>
+  <option value="">Spanish Water Dog</option>
+  <option value="">Spinone Italiano</option>
+  <option value="">St. Bernard</option>
+  <option value="">Stabyhoun</option>
+  <option value="">Staffordshire Bull Terrier</option>
+  <option value="">Standard Schnauzer</option>
+  <option value="">Sussex Spaniel</option>
+  <option value="">Swedish Lapphund</option>
+  <option value="">Swedish Vallhund</option>
+  <option value="">Thai Ridgeback</option>
+  <option value="">Tibetan Mastiff</option>
+  <option value="">Tibetan Spaniel</option>
+  <option value="">Tibetan Terrier</option>
+  <option value="">Tornjak</option>
+  <option value="">Tosa</option>
+  <option value="">Toy Fox Terrier</option>
+  <option value="">Treeing Tennessee Brindle</option>
+  <option value="">Treeing Walker Coonhound</option>
+  <option value="">Vizsla</option>
+  <option value="">Weimaraner</option>
+  <option value="">Welsh Springer Spaniel</option>
+  <option value="">Welsh Terrier</option>
+  <option value="">West Highland White Terrier</option>
+  <option value="">Whippet</option>
+  <option value="">Wire Fox Terrier</option>
+  <option value="">Wirehaired Pointing Griffon</option>
+  <option value="">Wirehaired Vizsla</option>
+  <option value="">Xoloitzcuintli</option>
+  <option value="">Yorkshire Terrier</option>
+				
+  </select></div>
+  
+  <div class="data"> <p class="clr">Color <span>*</span></p>
+  <input name="" type="input" /></div>
+  
+  
+  <div class="clear"></div>
+  </div>
+  
+  <div class="data-row">
+  <div class="data"><p>Left Eye Color <span>*</span></p>
+  <select>
+  <option value="">Select Left Eye Color</option>
+  <option >Amber</option> 
+   <option value="">Black</option>  <option value="">Blind-Eye</option>
+   <option value="">Blue</option>
+   <option value="">Brown</option>
+   <option value="">Dark Brown</option>
+   <option value="">Gold</option>
+   <option value="">Green</option>
+   <option value="">Grey</option>
+   <option value="">Hazel</option>
+   <option value="">Light Brown</option>
+   <option value="">Red</option>
+   <option value="">Yellow</option>
+</select></div>
+  
+   <div class="data"><p class="rec">Right Eye Color   <span>*</span></p>
+<select>
+  <option value="">Select Right Eye Color</option>
+  <option >Amber</option> 
+   <option value="">Black</option>  <option value="">Blind-Eye</option>
+   <option value="">Blue</option>
+   <option value="">Brown</option>
+   <option value="">Dark Brown</option>
+   <option value="">Gold</option>
+   <option value="">Green</option>
+   <option value="">Grey</option>
+   <option value="">Hazel</option>
+   <option value="">Light Brown</option>
+   <option value="">Red</option>
+   <option value="">Yellow</option>
+</select>  </div>
+   
+    <div class="data"> <p class="bds">Body Spots / Markings </p>
+  <textarea name="" cols="" rows="" class="xtext"></textarea></div>
+  
+  <div class="clear"></div>
+  </div><div class="clear"></div>  <div class="data-row dob">
+  <div class="data "><p class="d-o-b">D.O.B <span>*</span></p>
+  <input name="" type="text"  class="dbbb"/></div>
+   <a href="#" class="clndr"></a><div class="or">OR</div> <div class="data mid-select "><p>Age<span>*</span></p>
+<select >
+  <option value="">Year</option>
+
+
+</select>
+
+
+<select>
+  <option value="">Month</option>
+
+
+</select>
+
+
+</div></div>
+  <div class="clear"></div>
+  
+ 
+<div class="clear"></div></div>
+  </div>
+   <h1 class="hd-hd expand"><a class="open" style="display:block" href="#" title="Expand/Collapse">Registration &amp; Insurance Information</a></h1>
+<div style="display: block;" class="collapse "> <div class="information-data stp2">
+<div class="data-row">
+<div class="data">
+ <p>Rabies ID#</p>
+<input name="input" type="text" />
+</div>
+<div class="data"> <p>City License / Registratrion#</p>
+<input name="" type="text" /></div>
+
+<div class="data"><p>Microchip#</p>
+<input name="" type="text" /> </div>
+
+</div>
+<div class="data-row">
+
+<div class="data"><p>AKC Registration#</p>
+    <input name="" type="text" /></div>
+
+<div class="data"><p>Insurance Company (For your Pet)</p>
+<input name="" type="text" /></div>
+
+<div class="data"> <p>Policy Number (Pet Insurance)</p>
+<input name="" type="text" />
+</div>
+
+</div>
+<div class="data-row">
+<div class="data"> <p> Insurance Company Phone Number</p>
+     <input name="" type="text" /></div>
+</div><div class="clear"></div></div><div class="clear"></div></div>
+     <h1 class="hd-hd expand"><a class="open" style="display:block" href="#" title="Expand/Collapse">Veterinarian Information</a></h1>
+<div style="display: block;" class="collapse "> <div class="information-data stp2">
+<div class="data"><p>Company Name</p>
+<input name="" type="text" /></div>
+   <div class="data"><p>Veterinarian Name</p>
+<input name="" type="text" /></div>
+   <div class="data"><p>Veterinarian Phone Number</p>
+<input name="" type="text" /></div>
+ <div class="clear"></div></div>
+    <div class="clear"></div></div><div class="clear"></div></div>
+</div></div>
+  <div class="clear"></div>
+
+ 
+
+   <h1 class="e-c">Previous Diagnosis</h1>
+   <div class="data-row d-add">
+  
+<select>
+  <option value="">tooth removal</option> 
+
+
+</select><a href="#" class="add"> ADD</a>
+<div class="clear"></div>  
+<div class="multiple-options">
+<div class="m-option">upset infection<a href="#">close</a></div>
+<div class="m-option">skin growth<a href="#">close</a></div>
+<div class="clear"></div>  
+</div>
+
+   </div>
+   <div class="food">
+<div >
+<div class="data">
+   <p><input name="" type="checkbox" value="" /> Food Allergies</p>
+   <h5>Allergic to</h5>
+<textarea name="" cols="" rows=""></textarea>
+   
+   </div>
+   
+   <div class="data">
+   <p><input name="" type="checkbox" value="" />Arthritis</p>
+   <h5>Please describe where the arthritis is located</h5>
+<textarea name="" cols="" rows=""></textarea>
+   
+   </div>
+   
+   <div class="data">
+   <p><input name="" type="checkbox" value="" />Other</p>
+   <h5>List Diagnosed Condition</h5>
+<textarea name="" cols="" rows=""></textarea>
+   
+   </div>
+   <div class="clear"></div>
+   </div>
+   <div class="yesno">
+   <p><span>*</span> Has Bella ever attended doggie day care, overnight boarding or been socioalized with other pets of the same species?
+   <input name="yes" type="radio" value="" /><span>Yes</span>
+   <input name="yes" type="radio" value="" /><span>No</span></p>
+    <p><span>*</span> Does Bella do well with ther other pets of the same species?
+      <input name="yes" type="radio" value="" /><span>Yes</span>
+   <input name="yes" type="radio" value="" /><span>No</span></p>
+    
+     <p><span>*</span>  Is Bella a rescue pet?
+       <input name="yes" type="radio" value="" /><span>Yes</span>
+   <input name="yes" type="radio" value="" /><span>No</span></p>
+   </div>
+<div >
+<div class="clear"></div> 
+   </div>
+   </div>
+   <div class="clear"></div>
+   <div class="profile-pic">
+   <div class="pic-main">
+    <div class="pic">
+   <div class="pic-image">
+   <div class="profile-image"><img src="images/cat-view.png" width="125" height="98" alt="" /></div>
+  <p class="add-image">Add Profile Image </p>   
+   </div>
+<div class="file-uploader">
+<input type="text" class="file_input_textbox" readonly="readonly" value='No File Selected'>
+<div class="file_input_div">
+    <input type="button" value="Browse" class="file_input_button" />
+    <input type="file" name="uploaded_file" class="file_input_hidden"/>
+</div>
+<br/>
+<p>Maximum File Size: 6 MB (Images more than 6MB are not supported).<br/>
+The maximum width and height is 2,500X 3,000 Pixels.</p>
+</div></div>
+<div class="clear"></div>
+<div class="image-view">
+   <div class="image-viwe-box">
+   <div class="vbox"><img src="images/image-view-left.png" width="78" height="66" alt="" />
+   <p>Left</p></div></div>
+   <div class="image-viwe-box">
+   <div class="vbox">
+   <img src="images/image-view-front.png" width="80" height="67" alt="" /> <p>Front</p>
+      </div>
+   </div>
+    
+   <div class="image-viwe-box">
+   <div class="vbox">
+   <img src="images/image-view-right.png" width="79" height="66" alt="" /><p>Right</p>
+   </div>
+   </div>
+     
+   <div class="clear"></div></div>
+
+
+   </div>
+   <div class="capcha notes">
+   <h5>Additional notes</h5>
+  <textarea name="" cols="" rows=""></textarea>
+  <div class="txt-vl">500</div></div>
+   
+   
+ 
+   <div class="clear"></div>
+  <div class="profile-pic-buttons pp-btn">
+  <a href="#" class="orange-button">Back</a>
+  <a href="#" class="orange-button">Continue</a>
+    <a href="#" class="orange-button">Add Pet#2</a>
+      <a href="#" class="green-button">Save &amp; Exit </a>
+  </div>   </div>
+
+  <!-- pet-owner-registration -->
+  </div>
+  <!-- iphone --> <div class="clear"></div><!-- pet-center -->
+  <div id="footer">
+  <div class="footer-find"><p>Find participating<br/>
+businesses near you.</p></div>
+    <div class="footer-customer-care"><p>Customer Care<br/>800.222.3333</p></div>
+      <div class="footer-email"><p>Email us<br/>
+info@mypetcredentials.com</p></div>
+<div class="footer-get-social">
+       <p>Get Social</p><br/>
+<a href="#"><img src="images/facebook.png" width="32" height="32" alt="" /></a> <a href="#"><img src="images/pinut.png" width="32" height="32" alt="" /></a><a href="#"> <img src="images/twitter.png" width="32" height="32" alt="" /></a> <a href="#"><img src="images/in.png" width="34" height="33" alt="" /></a>
+<a href="#"><img src="images/youtube.png" width="33" height="33" alt="" /></a></div>
+        <div class="clear"></div>
+  </div>
+  <div class="copyrite"> &copy; 2013 MyPetCredentials.com. All rights reserved. No animals were harmed in the making of this site.</div>
+  </div><!-- center-right -->
+  
+  <div class="clear"></div>
+  
+  </div><!-- center -->
+<div class="clear"></div>
+<div class="clear"></div>
+</div><!-- wrapper -->
+
+
+  <script src="js/idangerous.swiper-2.1.min.js"></script>
+  <script>
+  var mySwiper = new Swiper('.swiper-container',{
+    pagination: '.pagination',
+    loop:true,
+    grabCursor: true,
+    paginationClickable: true
+  })
+  $('.arrow-left').on('click', function(e){
+    e.preventDefault()
+    mySwiper.swipePrev()
+  })
+  $('.arrow-right').on('click', function(e){
+    e.preventDefault()
+    mySwiper.swipeNext()
+  })
+  </script>
+  
+  
+  <script src="js/idangerous.swiper-2.1.min.js"></script>
+  <script>
+  var mySwiper = new Swiper('.swiper-container',{
+    pagination: '.pagination',
+    loop:true,
+    grabCursor: true,
+    paginationClickable: true
+  })
+  $('.arrow-left').on('click', function(e){
+    e.preventDefault()
+    mySwiper.swipePrev()
+  })
+  $('.arrow-right').on('click', function(e){
+    e.preventDefault()
+    mySwiper.swipeNext()
+  })
+  </script>
+  
+  <script>
+function createByJson() {
+	var jsonData = [					
+					{description:'Choos your payment gateway', value:'', text:'Payment Gateway'},					
+					{image:'images/msdropdown/icons/Amex-56.png', description:'My life. My card...', value:'amex', text:'Amex'},
+					{image:'images/msdropdown/icons/Discover-56.png', description:'It pays to Discover...', value:'Discover', text:'Discover'},
+					{image:'images/msdropdown/icons/Mastercard-56.png', title:'For everything else...', description:'For everything else...', value:'Mastercard', text:'Mastercard'},
+					{image:'images/msdropdown/icons/Cash-56.png', description:'Sorry not available...', value:'cash', text:'Cash on devlivery', disabled:true},
+					{image:'images/msdropdown/icons/Visa-56.png', description:'All you need...', value:'Visa', text:'Visa'},
+					{image:'images/msdropdown/icons/Paypal-56.png', description:'Pay and get paid...', value:'Paypal', text:'Paypal'}
+					];
+	$("#byjson").msDropDown({byJson:{data:jsonData, name:'payments2'}}).data("dd");
+}
+$(document).ready(function(e) {		
+	//no use
+	try {
+		var pages = $("#pages").msDropdown({on:{change:function(data, ui) {
+												var val = data.value;
+												if(val!="")
+													window.location = val;
+											}}}).data("dd");
+
+		var pagename = document.location.pathname.toString();
+		pagename = pagename.split("/");
+		pages.setIndexByValue(pagename[pagename.length-1]);
+		$("#ver").html(msBeautify.version.msDropdown);
+	} catch(e) {
+		//console.log(e);	
+	}
+	
+	$("#ver").html(msBeautify.version.msDropdown);
+		
+	//convert
+	$("select").msDropdown({roundedBorder:false});
+	createByJson();
+	$("#tech").data("dd");
+});
+function showValue(h) {
+	console.log(h.name, h.value);
+}
+$("#tech").change(function() {
+	console.log("by jquery: ", this.value);
+})
+//
+</script>
+</body>
+</html>
